@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Aaron Nwokoro</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'blog_image.ico' %}"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title></title>
+  </head>
+  <body style="background-color: #d7e6eb;">
+
+    <style>
+      .name {
+        font-size: 30px;
+        color: #2c2cad;
+        padding-top: 15px;
+      }
+      
+    </style>
+    <!-- Image and text -->
+    <nav class="navbar  fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="{% static 'hng.png' %}" width="50" height="40" alt="logo" loading="lazy"></a>
+        <span class="name pull-left"><b>HNG INTENSHIP</b></span>
+        
+    </nav>
+    
+
+    <div class="container">
+      <div style="background-color: #76cbe3;" class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4" style="font-size: 40px;">AARON NWOKORO</h1>
+          <p class="lead">Backend Developer</p>
+                 
+          <p class="lead" style="text-align:left;">
+            Phone : 08137936228
+            <span style="float:right;">
+              Linkedln : Aaron Nwokoro
+            </span>
+          </p>
+
+          <p class="lead" style="text-align:left;">
+            Email : naarons800@gmail.com
+            <span style="float:right;">
+              Twitter : @maxiron_n
+            </span>
+          </p>
+
+        </div>
+      </div>
+
+      <div style="margin-top: 30px;" class="bs-example">
+        <div class="container-fluid">
+            <!-- Card sizing using grid markup -->
+            <div class="row mb-4">
+              <div style="background-color: #76cbe3; border-radius: 25px;" class="col-md-6">
+          
+                    <div class="card" style=" height: 200px; margin-top: auto; margin-bottom: auto;">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Experience</b></h5>
+                            <p class="card-text">
+                              <ul style="list-style-type:disc;">
+                                <li>Experience 1</li>
+                                <li>Experience 2</li>
+                                <li>Experience 3</li>
+                              </ul>
+                            </p>                            
+                        </div>
+                    </div>
+              
+              </div>
+              <div style="background-color: #76cbe3; border-radius: 25px;" class="col-md-6">
+          
+                <div class="card" style=" height: 200px; margin-top: auto; margin-bottom: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Education</b></h5>
+                        <p class="card-text">
+                          <ul style="list-style-type:disc;">
+                            <li>Primary School ---- Masters Vessel Academy</li>
+                            <li>Secondary School ---- Mayfair Academy</li>
+                            <li>University ---- FUTO</li>
+                          </ul>
+                        </p>                        
+                    </div>
+                </div>
+          
+          </div>
+      </div>
+    
+      <div style="margin-top: 30px;" class="bs-example">
+        <div class="container-fluid">
+            <!-- Card sizing using grid markup -->
+            <div class="row mb-4">
+              <div style="background-color: #76cbe3; border-radius: 25px;" class="col-md-6">
+          
+                    <div class="card" style=" height: 200px; margin-top: auto; margin-bottom: auto;">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Skills</b></h5>
+                            <p class="card-text">
+                              <ul style="list-style-type:disc;">
+                                <li>Coding</li>
+                                <li>Cisco Networking</li>
+                                <li>Backend Development</li>
+                              </ul>
+                            </p>
+                            
+                        </div>
+                    </div>
+              
+              </div>
+              <div style="background-color: #76cbe3; border-radius: 25px;" class="col-md-6">
+          
+                <div class="card" style=" height: 200px; margin-top: auto; margin-bottom: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Certifications</b></h5>
+                        <p class="card-text">
+                          <ul style="list-style-type:disc;">
+                            <li>First School Leaving --- 2011</li>
+                            <li>Junior WAEC --- 2014</li>
+                            <li>Senior WAEC --- 2017</li>
+                          </ul>
+                        </p>
+                    </div>
+                </div>
+          
+          </div>
+      </div>  
+      
+
+    </div>
+
+ 
+      <main style="background-color: #76cbe3; margin-top:20px; border-radius:25px;" class="container">
+          <div class="container my-5">
+      <div class="row justify-content-center">
+          <div class="col-md-8">
+              <div class="card">
+                  <div class="card-header text-center">
+                      <div class="" style="font-size: 20px; font-weight: 600;">
+                          Contact Me
+                      </div>
+                  </div>
+  
+                  <div class="card-body">
+                      
+                      <form method="post" class="needs-validation" novalidate>
+                          {% csrf_token %}
+                          <input type="hidden" name="" value="">
+                          <div class="form-group row">
+                              <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
+  
+                              <div class="col-md-6">
+                                  <input id="name" type="text" class="form-control " name="name" value="" autocomplete="name" required>
+  
+                              </div>
+                          </div>
+  
+                       
+  
+                          <div class="form-group row">
+                              <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+  
+                              <div class="col-md-6">
+                                  <input id="email" type="email" class="form-control " name="email" value="" required autocomplete="email">
+  
+                              </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <label for="subject" class="col-md-4 col-form-label text-md-right">Subject</label>
+                            <div class="col-md-6">
+                              <textarea name="subject" class="form-control" id="subject" rows="3" ></textarea>
+
+                            </div>
+                          </div>
+  
+
+  
+                          <div style="text-align-last: center;" class="form-group row mb-0">
+                              <div class="col-md-6 offset-md-4 ml-auto">
+                                  <button onclick="myFunction()" type="" class="btn btn-primary">
+                                      Contact
+                                  </button>
+                                  <script>
+                                    function myFunction() {
+                                      alert("Thanks for contacting us");
+                                    }
+                                    </script>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    
+  
+              
+  </body>
+</html>
